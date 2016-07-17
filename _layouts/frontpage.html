@@ -10,8 +10,8 @@
 
                 {% include content.html %}
 
-                {% for part in parts %}
-                {% if part.category == 'frame' %}
+                {% for part in site.parts %}
+                {% if part.categories == 'frame' %}
                 {{ part.title }}
                 {% endif %}
                 {% endfor %}
