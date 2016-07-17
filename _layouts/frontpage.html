@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html ng-app="sampleApp">
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body ng-controller="sampleCtrl">
-    <div id="page" class="hfeed site">
+<body ng-controller="sampleCtrl">
+    <div id="container">
+        <div class="inner">
+            <div id="page" class="hfeed site">
 
-    {% include content.html %}
+                {% include content.html %}
 
-    {% include footer.html %}
-
+                {% include footer.html %}
+            </div>
+        </div>
     </div>
-  </body>
+</body>
 </html>
