@@ -11,9 +11,10 @@
                 {% include content.html %}
 
                 {% for part in site.parts %}
-                {% if part.category == 'frame' %}
                 {{ part.title }}
-                {% endif %}
+                {% for tag in part.categories %}
+                {{ tag }}
+                {% endfor %}
                 {% endfor %}
 
                 {% include footer.html %}
