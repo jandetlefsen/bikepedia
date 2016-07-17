@@ -10,6 +10,10 @@
 
                 {% include content.html %}
 
+                {% for part in site.parts %}
+                {{ part.title }}
+                {% endfor %}
+
                 {% include footer.html %}
             </div>
         </div>
