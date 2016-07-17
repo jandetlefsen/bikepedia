@@ -10,9 +10,10 @@
 
                 {% include content.html %}
 
-                {% assign parts = site.parts | where:'frame', post.category %}
                 {% for part in parts %}
+                {% if part.categories == 'frame' %}
                 {{ part.title }}
+                {% endif %}
                 {% endfor %}
 
                 {% include footer.html %}
