@@ -10,7 +10,7 @@
 
                 {% include content.html %}
 
-                {% assign parts = site.parts | where:'frames', post.categories %}
+                {% assign parts = site.parts | where:'frame', post.category %}
                 {% for part in parts %}
                 {{ part.title }}
                 {% endfor %}
