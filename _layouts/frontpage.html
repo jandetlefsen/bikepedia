@@ -15,12 +15,13 @@
                     {% for part in site.parts %}
                     <li>
                         {{ part.title }}
-                    </li>
-                    {% for tag in part.categories %}
-                    <li>
+                        (
+                        {% for tag in part.categories %}
                         {{ tag }}
+                        {% endfor %}
+                        )
                     </li>
-                    {% endfor %}
+
                     {% endfor %}
                 </ul>
 
