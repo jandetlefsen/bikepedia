@@ -10,12 +10,19 @@
 
                 {% include content.html %}
 
-                {% for part in site.parts %}
-                {{ part.title }}
-                {% for tag in part.categories %}
-                {{ tag }}
-                {% endfor %}
-                {% endfor %}
+                <ul>
+
+                    {% for part in site.parts %}
+                    <li>
+                        {{ part.title }}
+                    </li>
+                    {% for tag in part.categories %}
+                    <li>
+                        {{ tag }}
+                    </li>
+                    {% endfor %}
+                    {% endfor %}
+                </ul>
 
                 {% include footer.html %}
             </div>
