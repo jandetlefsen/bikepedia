@@ -3,15 +3,4 @@ layout: frontpage
 active: index
 title: "Bikepedia"
 ---
-    <ul>
-        {% for part in site.parts %}
-        <li>
-            <a href="{{ part.url | prepend: site.baseurl }}">{{ part.title }}</a>
-            (
-            {% for tag in part.categories %}
-            {{ tag }}
-            {% endfor %}
-            )
-        </li>
-        {% endfor %}
-    </ul>
+<a href="{{ '/frames' | prepend: site.baseurl }}">Frames</a>
