@@ -2,7 +2,7 @@ baseurl: "/bikepedia"
 url: "https://jandetlefsen.github.io" # the base hostname & protocol for your site
 github_username:  jandetlefsen
 
-collections:
-  parts:
-    output: true
-    permalink: /parts/:path/
+# collections:
+#   parts:
+#     output: true
+#     permalink: /parts/:path/
