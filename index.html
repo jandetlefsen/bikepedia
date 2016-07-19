@@ -41,3 +41,16 @@ title: "Index"
 
         <p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
     </section>
+
+    <ul>
+        {% for part in site.parts %}
+        <li>
+            <a href="{{ part.url | prepend: site.baseurl }}">{{ part.title }}</a>
+            (
+            {% for tag in part.categories %}
+            {{ tag }}
+            {% endfor %}
+            )
+        </li>
+        {% endfor %}
+    </ul>
