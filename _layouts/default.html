@@ -5,6 +5,9 @@
     <div id="container">
         <div class="inner">
             <div id="page" class="hfeed site">
+                <header>
+                  <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+                </header>
                 {% include content.html %}
                 {% include footer.html %}
             </div>
