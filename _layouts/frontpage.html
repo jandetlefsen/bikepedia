@@ -14,7 +14,7 @@
 
                     {% for part in site.parts %}
                     <li>
-                        <a href="{{ part.url }}">{{ part.title }}</a>
+                        <a href="{{ part.url | prepend: site.baseurl }}">{{ part.title }}</a>
                         (
                         {% for tag in part.categories %}
                         {{ tag }}
