@@ -4,6 +4,7 @@
 <body ng-controller="sampleCtrl">
     <div id="container">
         <div class="inner">
+            {% include breadcrumps.html %}
             <div id="page" class="hfeed site">
                 <header>
                   <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
